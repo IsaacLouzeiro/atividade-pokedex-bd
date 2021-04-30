@@ -13,9 +13,9 @@ select avg(altura) from pokedex where lendario = 1;
 3) Quais pokemons são mais pesados pela média: os dos tipos rock ou do tipo steel?
 steel
 
-select avg(peso) from pokedex where tipo1 = "rock" or tipo2 = "steel";
+select avg(peso) from pokedex where tipo1 = "rock" or tipo2 = "rock";
 
-select avg(peso) from pokedex where tipo1 = "steel" or tipo2 = "rock";
+select avg(peso) from pokedex where tipo1 = "steel" or tipo2 = "steel";
 
 
 
@@ -66,26 +66,26 @@ INSERT INTO pokedex(pokedex_number,nome,attack,defesa,altura,hp,velocidade,tipo1
 
 
 6) Qual tipo de pokemon possui mais attack em média.
-tipo dragao
+tipo lutador
 
-select avg(attack), tipo1 from pokedex where tipo1 = "grama";
-select avg(attack), tipo1 from pokedex where tipo1 = "fogo";
-select avg(attack), tipo1 from pokedex where tipo1 = "agua";
-select avg(attack), tipo1 from pokedex where tipo1 = "inseto";
-select avg(attack), tipo1 from pokedex where tipo1 = "eletrico";
-select avg(attack), tipo1 from pokedex where tipo1 = "chao";
-select avg(attack), tipo1 from pokedex where tipo1 = "veneno";
-select avg(attack), tipo1 from pokedex where tipo1 = "fada";
-select avg(attack), tipo1 from pokedex where tipo1 = "lutador";
-select avg(attack), tipo1 from pokedex where tipo1 = "voador";
-select avg(attack), tipo1 from pokedex where tipo1 = "pedra";
-select avg(attack), tipo1 from pokedex where tipo1 = "dragao";
-select avg(attack), tipo1 from pokedex where tipo1 = "fantasma";
-select avg(attack), tipo1 from pokedex where tipo1 = "metal";
-select avg(attack), tipo1 from pokedex where tipo1 = "psiquico";
-select avg(attack), tipo1 from pokedex where tipo1 = "gelo";
-select avg(attack), tipo1 from pokedex where tipo1 = "noturno";
-select avg(attack), tipo1 from pokedex where tipo1 = "normal";
+select avg(attack), tipo1 from pokedex where tipo1 = "grama" or tipo2 = "grama";
+select avg(attack), tipo1 from pokedex where tipo1 = "fogo" or tipo2 = "fogo";
+select avg(attack), tipo1 from pokedex where tipo1 = "agua" or tipo2 = "agua";
+select avg(attack), tipo1 from pokedex where tipo1 = "inseto" or tipo2 = "inseto";
+select avg(attack), tipo1 from pokedex where tipo1 = "eletrico" or tipo2 = "eletrico";
+select avg(attack), tipo1 from pokedex where tipo1 = "chao" or tipo2 = "chao";
+select avg(attack), tipo1 from pokedex where tipo1 = "veneno" or tipo2 = "veneno";
+select avg(attack), tipo1 from pokedex where tipo1 = "fada" or tipo2 = "fada";
+select avg(attack), tipo1 from pokedex where tipo1 = "lutador" or tipo2 = "lutador";
+select avg(attack), tipo1 from pokedex where tipo1 = "voador" or tipo2 = "voador";
+select avg(attack), tipo1 from pokedex where tipo1 = "pedra" or tipo2 = "pedra";
+select avg(attack), tipo1 from pokedex where tipo1 = "dragao" or tipo2 = "dragao";
+select avg(attack), tipo1 from pokedex where tipo1 = "fantasma" or tipo2 = "fantasma";
+select avg(attack), tipo1 from pokedex where tipo1 = "metal" or tipo2 = "metal";
+select avg(attack), tipo1 from pokedex where tipo1 = "psiquico" or tipo2 = "psiquico";
+select avg(attack), tipo1 from pokedex where tipo1 = "gelo" or tipo2 = "gelo";
+select avg(attack), tipo1 from pokedex where tipo1 = "noturno" or tipo2 = "noturno";
+select avg(attack), tipo1 from pokedex where tipo1 = "normal" or tipo2 = "normal";
 
 
 
